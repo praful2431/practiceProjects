@@ -1,0 +1,289 @@
+body{
+    background: radial-gradient(circle at 20% -15%, #15151E 55%, #ff1e00 150%);
+    color: #FFFFFF;
+    margin: 0px;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#containers{
+    display: grid;
+    grid-template-columns: 2.5fr 7.5fr;
+}
+
+#mainArea{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 200px 470px 120px 750px 150px;
+}
+
+#driverStandings {
+    height: 1840px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-right: 1px solid #ff1e00;
+    display: grid;
+    grid-template-rows: 100px 200px 1000px;
+}
+
+#lineDivider{
+    height: 2px;
+    width: 80%;
+    background-color: #ff1e00;
+    justify-self: center;
+    align-self: start;
+    margin-top: 10px;
+}
+
+#dsTitle {
+    justify-self: center;
+    align-self: start;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#dsTable{
+    border-collapse: collapse;
+    justify-self: center;
+    width: 90%;
+    transform: translateY(-170px);
+    height: 125%;
+    text-align: center;
+}
+
+th{
+    color: #ffffff;                  /* white text */
+    padding: 10px 12px;              /* spacing */
+    font-size: 18px;
+    letter-spacing: 1px;             /* race style spacing */
+    text-transform: uppercase;       /* bold table look */
+    border-bottom: 2px solid #ffffff62;
+}
+
+#polePosition {
+    font-size: 25px;
+}
+
+#secondPosition {
+    font-size: 22px;
+}
+
+#thirdPosition {
+    font-size: 19px;
+}
+
+#f1Logo {
+    height: 84.375px;
+    width: 150px;
+    justify-self: center;
+    align-self: start;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+#header {
+    grid-row: 1;
+    height: 100px;
+    background-color: #0b0b0b;
+    border-bottom: 1px solid #ff1e00;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+button{
+    vertical-align: middle;
+    margin-top: 35px;
+    border: none;
+    font-size: 25px;
+    font-family: "Racing Sans One", sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#RacesButton {
+    transform: translateX(55px);
+}
+
+#spots {
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0px 50px 0px 50px;
+    height: 450px;
+}
+
+.driverBox{
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+#driver1{
+    border: 1px solid #FF8000;
+}
+
+#driver1 img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% -10%;
+    display: block;
+    transform: translateX(17px);
+    transition: transform 0.4s ease;
+}
+
+#driver1:hover{
+    background: #FF8000;
+    box-shadow: 0px 0px 300px #914900;
+}
+
+#driver1:hover img{
+    transform: scale(1.2) translateX(14px) translateY(25px);
+}
+
+#driver2{
+    border: 1px solid #FF8000;
+}
+
+#driver2 img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% -10%;
+    display: block;
+    transform: translateX(17px);
+    transition: transform 0.4s ease;
+}
+
+#driver2:hover{
+    background: #FF8000;
+    box-shadow: 0px 0px 300px #914900;
+}
+
+#driver2:hover img{
+    transform: scale(1.2) translateX(14px) translateY(25px);
+}
+
+#driver3{
+    border: 1px solid #E30118;
+}
+
+#driver3 img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% -10%;
+    display: block;
+    transform: translateX(17px);
+    transition: transform 0.4s ease;
+}
+
+#driver3:hover{
+    background: #E30118;
+    box-shadow: 0px 0px 300px #91000f;
+}
+
+#driver3:hover img{
+    transform: scale(1.2) translateX(14px) translateY(25px);
+}
+
+.driverInfo{
+    display: grid;
+    grid-row: 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0px 50px 0px 50px;
+    height: 150px;
+}
+
+.driverDetails{
+    padding-left: 30px;
+    font-family: "Teko", sans-serif;
+    height: 100px;
+}
+
+.driverName{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info{
+    margin-top: 0px;
+}
+
+#mainTitle {
+    justify-self: center;
+    margin: 20px 0;
+    font-size: 60px;
+    grid-row: 2;
+    height: 150px;
+}
+
+#imgCollage {
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0px 50px 0px 50px;
+    gap: 0px 0px;
+    height: 700px;
+}
+
+.carImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#LT{
+    grid-column: 1;
+    grid-row: 1;
+    size: 25%;
+}
+
+#LB{
+    grid-column: 1;
+    grid-row: 2;
+    size:25%
+}
+
+#RTB{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    size:25%
+}
+
+#contact{
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-top: 2px solid #ff1e00;
+    background-color: rgb(11, 11, 11, 0.75);
+}
+
+#contactHeader{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+#email{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 25px;
+}
+
+#linkedin{
+    grid-column: 2;
+    grid-row: 2;
+}
