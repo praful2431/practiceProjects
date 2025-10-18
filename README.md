@@ -1,7 +1,7 @@
 # practiceProjects
 For Pratice and Application of Skills learning/learned
 
-# My Practice & Educational Projects
+## My Practice & Educational Projects
 
 This repository contains multiple web development and coding practice projects created for **learning and educational purposes only**.  
 
