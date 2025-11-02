@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png" alt="F1 Logo" id="f1Logo">
+        <nav id="navLinks">
+            <div class="headLink" id="Home"><a href="https://www.formula1.com/" target="_blank"></a>Home</div>
+            <div class="headLink" id="About"><a href="https://www.formula1.com/en/results/2025/drivers" target="_blank"></a>Drivers</div>
+            <div class="headLink" id="Visit">Visit</div>
+            <div class="headLink" id="Scorecard"><a href="https://praful2431.github.io/practiceProjects/Web_Assignments/staticPage_F1/f1.html" target="_blank">Scorecard</a></div>
+        </nav>
+    </header>
+    <form id="formBox">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Phone Number</label>
+                <input type="tel" name="contact" id="contact" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Visit Details</legend>
+
+            <div class="form-group">
+                <label for="team">Team</label>
+                <select name="team" id="team">
+                    <option value="Any">No Preference</option>
+                    <option value="McLaren">McLaren</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Red Bull Racing">Red Bull Racing</option>
+                    <option value="Williams">Williams</option>
+                    <option value="Racing Bulls">Racing Bulls</option>
+                    <option value="Aston Martin">Aston Martin</option>
+                    <option value="Hass F1 Team">Hass F1 Team</option>
+                    <option value="Kick Sauber">Kick Sauber</option>
+                    <option value="Alpine">Alpine</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" name="date" id="date" min="2025-12-01" max="2025-12-31">
+            </div>
+
+            <div class="form-group">
+                <label for="visitors">Number of Visitors</label>
+                <select name="visitors" id="visitors">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Tour Duration</label>
+                <label class="txt"><input type="radio" name="duration" value="halfday"> Half-Day</label>
+                <label class="txt"><input type="radio" name="duration" value="fullday"> Full-Day</label>
+            </div>
+
+            <div class="form-group">
+                <label for="req">Special Requests/Comments or Medical Issues</label>
+                <input type="text" name="req" id="req">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <div class="form-group">
+                <label for="myID">Upload Valid Identification:</label>
+                <input type="file" name="myID" id="myID" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Important Notes</legend>
+            <ul class="txt">
+                <li>Carry Valid Government-Issued ID</li>
+                <li>Wear Closed Shoes and Avoid Loose Clothing.</li>
+                <li>Photography is allowed only in designated areas.</li>
+                <li>Visitors must arrive at least 15 minutes before their scheduled time.</li>
+                <li>Children under 12 are <b>not</b> allowed inside the facility.</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <div class="txt" id="TC">
+                <a href="" class="TClink">F1 Terms and Conditions</a>
+                <a href="" class="TClink">Respective Facilities and T&Cs</a>
+            </div>
+
+            <div class="form-group   txt">
+                <label><input type="radio" name="checkNote" required> I have read the above and agree to the same</label>
+                <label><input type="radio" name="checkF1TC" required> I have read and agree to the Terms and Conditions of F1</label>
+                <label><input type="radio" name="checkFac" required> I have read and agree to the Terms and Conditions of the Respective Facility</label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+</body>
+</html>
