@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: "Racing Sans One";
+    background-color: #15151E;
+    color: white;
+}
+
+.txt{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-bottom-color: #ff1e00;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;; 
+    
+}
+
+#f1Logo{
+    height: auto;
+    width: 10%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: auto;
+    gap: 40px;
+}
+
+.headLink{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.headLink:hover{
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#Visit{
+    border-bottom: 2px solid;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+fieldset {
+    width: 50%;
+    border: 2px solid #ff1e00;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 25px;
+    font-weight: normal;
+    color: #ff1e00;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label{
+    
+    padding-bottom: 5px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), select {
+    background-color: rgba(255, 30, 0, 0.1);
+    border: 1px solid #ff1e00;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focu, select:focus{
+    background-color: rgba(255, 30, 0, 0.2);
+    border-color: #ff3b1f;
+    box-shadow: 0 0 5px #ff1e00;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+#myID{
+    padding-top: 10px;
+    width:27%;
+}
+
+#TC{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TClink{
+    padding: 8px 4px 0px;
+}
+
+#submit{
+    width: 10%;
+}
