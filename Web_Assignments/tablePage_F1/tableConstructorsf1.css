@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body{
+    display: grid;
+    grid-row: 0;
+    font-family: "Racing Sans One";
+    font-size: 16px;
+    background-color: #15151E;
+    color: white;
+}
+
+header{
+    border-bottom: 2px solid #ff1e00;   
+    display: inline-flex;
+}
+
+nav{
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#f1Logo{
+    width: 120px;
+}
+
+.headLink{
+    font-size: 25px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#Constructors{
+    border-bottom: 2px solid;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: 2px solid;
+    border-top-color: #ff1e00;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+table{
+    justify-self: center;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 85%;
+
+    margin: 50px auto 70px auto;
+
+    vertical-align: middle;
+}
+
+th{
+    border-bottom: 1px solid white;
+}
+
+tr:not(:last-child){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+th, td{
+    padding: 15px;
+}
+
+th{
+    font-size: 20px;
+}
+
+td{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.col1{
+    text-align: left;
+}
+
+.col2{
+    text-align: left;
+}
+
+.col3{
+    text-align: right;
+}
+
+.txt{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*CSS done here is entirely using Chatgpt/Youtube*/
+/* Hover Dropdown Table Car Animation */
+.main-row {
+  transition: background-color 0.3s ease;
+}
+
+.row1:hover, .row1:hover + .expand-row { background-color: #F47600; }
+.row2:hover, .row2:hover + .expand-row { background-color: #ED1131; }
+.row3:hover, .row3:hover + .expand-row { background-color: #00D7B6; }
+.row4:hover, .row4:hover + .expand-row { background-color: #4781D7; }
+.row5:hover, .row5:hover + .expand-row { background-color: #1868DB; }
+.row6:hover, .row6:hover + .expand-row { background-color: #6C98FF; }
+.row7:hover, .row7:hover + .expand-row { background-color: #229971; }
+.row8:hover, .row8:hover + .expand-row { background-color: #9C9FA2; }
+.row9:hover, .row9:hover + .expand-row { background-color: #01C00E; }
+.row10:hover, .row10:hover + .expand-row { background-color: #00A1E8; }
+
+.expand-row {
+  display: none;
+}
+
+.main-row:hover + .expand-row {
+  display: table-row;
+}
+
+.expand-row td {
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+.expand-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  padding: 0;
+}
+
+.expand-content img {
+  height: 100px;
+}
