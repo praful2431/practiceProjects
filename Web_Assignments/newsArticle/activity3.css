@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 150px;
+    padding: 0;
+    
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+#row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #0091ac;
+}
+
+#left-block {
+    display: flex;
+    gap: 20px;
+    width: 33%;
+}
+
+#brand {
+    text-align: center;
+    flex-grow: 1;
+    
+    text-shadow: 0px 0px 10px white;
+}
+
+#right-block {
+    width: 33%;
+}
+
+#row2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 250px;
+    background-color: black;
+}
+
+#row2 p{
+    color:white;
+}
+
+#row2 p:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#row3{
+    background-color: red;
+    color: white;
+    
+    height: 20px;
+
+    align-items: center;
+}
+
+#row3 p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+#split-bar{
+    border: 1px solid white;
+    height: 25px;
+    align-self: center;
+}
+
+#nonHeader{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 200px;
+    padding: 85px 150px;
+}
+
+#artPic{
+    width: 100%;
+}
+
+#image{
+    float: left;
+    width: 70%;
+    margin-right: 15px;
+}
+
+#altTxt{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;  
+}
+
+#sidebar h2{
+    align-self: center;
+    justify-self: center;
+}
+
+#localNews, #forYou, #moreOnThis{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#localNews{
+    background-color: rgba(124, 227, 245, 0.612);
+}
+#forYou{
+    background-color: rgba(124, 227, 245, 0.612);
+}
+#moreOnThis{
+    background-color: rgba(124, 227, 245, 0.612);
+}
+
+.newsBlock{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.newsBlock img{
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.newsBlock p{
+    flex: 1;
+    padding: 0px 7px;
+}
+
+.newsBlock a{
+    text-decoration: none;
+    color: black;
+}
+
+.newsBlock a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+#ln1, #ln2, #ln3, #fy1, #fy2, #fy3, #m1, #m2, #m3{
+    display: flex;
+    direction: row;
+}
+
+footer {
+    background-color: #0091ac;
+    height: 120px;  
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    padding: 20px 75px 0px 75px;
+
+    clear: both;
+}
+
+footer div{
+    justify-self: right;
+}
